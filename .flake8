@@ -1,0 +1,11 @@
+[flake8]
+max-line-length = 120
+import-order-style = google
+application-import-names = dxbench
+ignore = E731
+exclude = .git, __pycache__, pyproject.toml, build/*
+include = dxbench/*
+plugins = flake8-import-order
+per-file-ignores =
+  __init__.py: F403, F401
+  tests/*: E741
